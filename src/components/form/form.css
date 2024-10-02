@@ -1,0 +1,121 @@
+.btn{
+    font-size: 20px;
+    background: linear-gradient(45deg,#2E3192 , #1BFFFF);
+    box-shadow: inset 0 1px 1px #ffaadb, 0 0 10px 1px #2E3192;
+    transition: background 0.6s ease-in-out;
+    border: #ff93d1;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: border 0.6s linear;
+
+}
+.btn:hover{
+    background: linear-gradient(to right,#ff93d1,#C560E4,#4D378D);
+    box-shadow: inset 0 1px 4px #ffaadb, 0 0 20px 2px #ff93d1;
+    border:1px solid pink ;
+}
+.form-container{
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+   display: flex;
+   flex-direction : column;
+   gap: 25px;
+   align-items: center;
+   justify-content: center;
+   /* height: 90vh; */
+   
+   background: linear-gradient(45deg, #C560E4,#4D378D);
+   border-radius: 10px;
+}
+.input-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.input-field{
+    width: 270px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.input-field:focus{
+    outline: none;
+    border-color: #ff97d3;
+    box-shadow: inset 0 1px 4px #ffaadb, 0 0 20px 2px #ff93d1;
+}
+.input-label{
+    color: white;
+    font-size: 20px;
+}
+.radio-container{
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+    color: white;
+}
+.selection-field{
+    border-radius: 5px;
+    font-size: 20px;
+    width: 240px;
+    height: 30px;
+}
+.selection-field:focus{
+    outline: none;
+    border-color: #ff97d3;
+    box-shadow: inset 0 1px 4px #ffaadb, 0 0 20px 2px #ff93d1;
+}
+.selection-container{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+@media screen and (min-width: 1000px) and (max-width:1900px) {
+    .form-container{
+        margin-top: 7px;
+        margin-bottom: 7px; 
+         width: 43vw;
+         height: 97vh;
+            }
+}
+@media screen and (min-width: 700px) and (max-width:1000px) {
+    .form-container{
+         margin-top: 7px;
+         margin-bottom: 7px; 
+         width: 60vw;
+         height: 97vh;
+
+            }
+}
+@media screen and (min-width: 410px) and (max-width:700px) {
+    .form-container{
+         width: 100vw;
+         height: 100vh;
+         border-radius: 0px;
+            }
+}
+@media screen and (min-width: 310px) and (max-width:410px) {
+    .form-container{
+         width: 100vw;
+         height: 100vh;
+         border-radius: 0px;
+
+            }
+}
+@media screen and (min-width: 300px) and (max-width: 410px) {
+    .input-field{
+        width: 200px;
+    }
+    .input-label{
+        font-size: 16px;
+    }
+    .radio-container{
+        display: flex;
+        gap: 35px;
+        font-size: 16px;
+        color: white;
+    }
+}
+
